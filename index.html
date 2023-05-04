@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .heading{
+            text-align: center;
+            font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            color: #f2a93b;
+            /* margin: 0px 0px 10px 0px; */
+            padding: 25px 0px 20px;
+            background-color: #dcdcdc;
+        }
+        h1{
+            margin: 0px;
+        }
+        p{
+            color: black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 10px;
+            font-size: 15px;
+        }
+
+        .btn-section{
+            text-align: center;
+            margin: 25px;
+        }
+        .btn{
+            padding: 8px 25px;
+            margin: 0 5px;
+            background-color: #f2a93b;
+            border: 0px;
+            border-radius: 2px;
+        }
+        .btn:hover{
+            background-color: #f4b350;
+        }
+
+        .dataDiv{
+            padding: 10px 100px;
+            font-size: 20px;
+            /* background-color: #dcdcdc; */
+        }
+        .eachDiv{
+            display: flex;
+            margin: 20px 0px;
+            vertical-align: middle;
+        }
+        .prac{
+            height: 20px;
+            width: 20px;
+            background-color: red;
+            margin: 2px;
+        }
+
+
+        span{
+            margin: auto 30px;
+        }
+        .name{
+            width: 255px;
+        }
+        .mainCata{
+            overflow: hidden;
+            width: 80%;
+        }
+        .cata{
+            height: 40px;
+            width: 40%;
+            margin-left: 10px;
+            background-color: #f2a93b;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="heading">
+        <h1>World Countries Data</h1>
+        <p>Currently we have 250 Countries</p>
+    </div>
+    <hr>
+    <div class="btn-section">
+        <button class="btn" onclick="Population()">Population</button>
+        <button class="btn" onclick="Lang()">Languages</button>
+        <p class="text_showing"></p>
+    </div>
+    <hr>
+    <div class="dataDiv">
+    </div>
+    <hr>
+    <script src="script.js"></script>
+</body>
+
+</html>
